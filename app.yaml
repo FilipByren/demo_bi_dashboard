@@ -1,6 +1,3 @@
-runtime: python
-api_version: 1
-threadsafe: true
-
+runtime: python37
 runtime_config:
   python_version: 3

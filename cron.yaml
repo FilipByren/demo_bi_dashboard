@@ -1,3 +1,4 @@
 cron:
 - description: 'Load task for report tables'
+  url: /
   schedule: every 2 minutes
