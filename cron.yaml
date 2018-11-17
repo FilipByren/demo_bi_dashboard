@@ -1,4 +1,4 @@
 cron:
-- description: 'Load task for report tables'
+- description: 'Aggregations for the data warehouse report'
   url: /
-  schedule: every 2 minutes
+  schedule: every 6 hours

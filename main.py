@@ -11,7 +11,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials/credential.json"
 bigquery_client = bigquery.Client()
 
 @app.route('/')
-def hello():
+def update_table():
     df = aggregation_on_table()
     load_on_dashboard_table(df)
 
@@ -21,6 +21,7 @@ def hello():
 def server_error(e):
     # Log the error and stacktrace.
     logging.exception('An error occurred during a request.')
+    logging.exception(e)
     return 'An internal error occurred.', 500
 
 def aggregation_on_table():
